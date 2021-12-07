@@ -1,0 +1,16 @@
+{
+  "name": "adamnguyen7.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Le Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.27.7",
+    "bulma": "^0.9.3",
+    "jquery": "^3.6.0"
+  }
+}

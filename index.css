@@ -9,9 +9,7 @@ ul {
  .dark-mode {
   background-color: rgb(3, 29, 46);
 }
-.b {
-  background-color:yellow;
-}
+
 #myBtn {
   position:relative;
   left:100px;

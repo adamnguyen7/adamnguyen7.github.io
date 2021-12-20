@@ -1,15 +1,22 @@
-html {
+body {
     
-    background-image: linear-gradient(90deg, rgb(123,175,212),  rgb(3, 29, 46));
-    background-repeat: no-repeat;
-    background-size: 800% 200%;
-    animation: gradient 20s ease infinite;
-    overflow: hidden;
+    background-color: rgb(123,175,212);
+    
 }
 ul {
     margin: 0 0 0 100px;
-    
  }
+ .dark-mode {
+  background-color: rgb(3, 29, 46);
+}
+.b {
+  background-color:yellow;
+}
+#myBtn {
+  position:relative;
+  left:100px;
+  top:12px;
+}
 #container span {
     color:black;
     text-transform: uppercase;

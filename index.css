@@ -34,7 +34,7 @@ ul {
 
 @keyframes text{
     0%{
-        color: black;
+        color: white;
     }
     30%{
         letter-spacing: 40px;

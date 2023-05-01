@@ -1,0 +1,43 @@
+@use "partial";
+
+//variables in SASS
+$primary-color: black;
+//define a map use parenthesis
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+);
+
+body {
+    background:$primary-color;
+    font-weight: map-get($font-weights, bold)
+}
+
+@mixin important-text {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue;
+  }
+
+  .danger {
+    @include important-text;
+    background-color: green;
+  }
+//nest
+
+.main {
+    width:100%;
+    .p {
+        color:partial.$myBlue;
+    }
+    //ampersand means parent
+    &_paragraph {
+        font-weight: 20px;
+    }
+    //#{&} means everything before it counts as well
+    #{&}_paragraph {
+        font-size: large;
+    }
+}

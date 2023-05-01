@@ -1,17 +1,16 @@
 {
   "name": "adamnguyen7.github.io",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Adam Le Nguyen",
-  "license": "ISC",
+  "repository": "https://github.com/adamnguyen7/adamnguyen7.github.io.git",
+  "author": "Adam Nguyen <adanguyen814@gmail.com>",
+  "license": "MIT",
   "dependencies": {
-    "browser-sync": "^2.27.7",
-    "bulma": "^0.9.3",
-    "bulma-switch": "^2.0.0",
-    "jquery": "^3.6.0"
+    "browser-sync": "^2.29.1",
+    "bulma": "^0.9.4",
+    "bulma-switch": "^2.0.4",
+    "eslint": "^8.39.0",
+    "eslint-config": "^0.3.0",
+    "jquery": "^3.6.4"
   }
 }

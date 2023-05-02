@@ -8,6 +8,18 @@ function myFunction() {
   const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   const scrolled = (winScroll / height) * 100;
   document.getElementById('myBar').style.width = `${scrolled}%`;
+window.onscroll = function () {
+  myFunction(), myFunction2();
+};
+
+var navbar = document.getElementById('navbar');
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById('myBar').style.width = scrolled + '%';
 }
 
 function myFunction2() {
@@ -25,6 +37,14 @@ document.getElementById('myBtn').addEventListener('click', () => {
   const x = document.getElementsByClassName('title');
   const m = document.getElementsByClassName('text1');
   let i;
+var p = 0;
+document.getElementById('myBtn').addEventListener('click', function () {
+  p++;
+  var element = document.body;
+  element.classList.toggle('dark-mode');
+  var x = document.getElementsByClassName('title');
+  var m = document.getElementsByClassName('text1');
+  var i;
   if (p % 2 == 1) {
     document.getElementById('myBtn').className = 'button is-black';
     document.getElementById('myBtn').innerHTML = 'Light Mode';
@@ -45,4 +65,4 @@ document.getElementById('myBtn').addEventListener('click', () => {
       m[i].style.color = '#363636';
     }
   }
-});
+})})}

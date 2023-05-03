@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
 module.exports = {
   mode: 'development',
   entry: {
@@ -9,7 +11,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name][contenthash].js',
     clean: true,
-  }, 
+  },
 
   devServer: {
     static: {
@@ -43,7 +45,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Webpack App',
       template: 'src/template.html',
+      // eslint-disable-next-line linebreak-style
       filename: 'index.html',
     }),
+    // new BundleAnalyzerPlugin(),
   ],
 };

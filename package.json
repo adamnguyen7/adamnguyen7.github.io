@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
+    "bash_test": "bash test.sh",
     "lint": "eslint --max-warnings=0 ./src --fix",
     "build": "webpack",
     "dev": "webpack serve"

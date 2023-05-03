@@ -9,10 +9,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name][contenthash].js',
     clean: true,
-  },
-  //USE IF YOU WANT SOURCE MAP FILE
-  //devtool: 'source-map',
-  //after installing relevant loaders, add a module object with a rules array with an object for each loader
+  }, 
+
   devServer: {
     static: {
       directory: path.resolve(__dirname, 'dist'),
